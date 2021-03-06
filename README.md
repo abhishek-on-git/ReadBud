@@ -13,4 +13,4 @@ https://play.google.com/store/apps/details?id=com.wcp.readassist
  6. Offline Dictionary - Offline support for over 70,000 words.
  7. Tap for meaning anywhere in Phone - You can use Readbud's inline dictionary anywhere in Phone. Just long tap the word => Press Share as => Tap on ReadBud.
  
-Deleted ReadBud 1.0 altogether due huge structural differences
+Deleted ReadBud 1.0 altogether due to huge structural differences.
