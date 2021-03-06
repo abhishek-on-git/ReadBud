@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_content_font_size">15dp</dimen>
+    <dimen name="page_content_max_font_size">25dp</dimen>
+    <dimen name="nav_bar_fallback_height">48dp</dimen>
+    <dimen name="card_view_margins">15dp</dimen>
+    <dimen name="header_view_top_margin">30dp</dimen>
+    <dimen name="common_side_margin">15dp</dimen>
+    <dimen name="card_text_size">20dp</dimen>
+    <dimen name="card_height">150dp</dimen>
+    <dimen name="card_icon_size">60dp</dimen>
+</resources>

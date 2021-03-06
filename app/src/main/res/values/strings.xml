@@ -1,0 +1,81 @@
+<resources>
+
+    <string name="app_common_error_message">Something went wrong!</string>
+    <!-- Main Screen -->
+    <string name="app_name">Read Bud</string>
+    <string name="db_loading_message">Loading DB</string>
+    <string name="pages_processed_message">pages processed</string>
+    <string name="creating_ebook_message">Creating E-Book</string>
+    <string name="extracting_text_message">Extracting text from images</string>
+    <string name="extract_text_button_text">Extract text</string>
+    <string name="update_failed_message">Failed to update app. Try again later.</string>
+    <string name="capture_card_text">Take a picture and extract text from it</string>
+    <string name="gallery_card_text">Extract text from an image in your gallery</string>
+    <string name="pdf_card_text">Read your pdfs with kindle like flexibility</string>
+    <string name="dictionary_card_text">Search a word with ReadBud dictionary</string>
+    <string name="permission_error_text">Read Bud can\'t function if you don\'t grant the permission</string>
+    <string name="permission_error_deny_btn_text">Close app</string>
+    <string name="permission_error_affirm_btn_text">Grant</string>
+
+    <!-- Capture Screen -->
+    <string name="capture_screen_header_text">Capture Text</string>
+    <string name="capture_help_text_line_1">Take pictures of your text in a well lit environment.</string>
+    <string name="capture_help_text_line_2">Tap on \"Extract text\" when done.</string>
+    <string name="create_ebook_btn_text">Extract text</string>
+    <string name="add_to_list_btn_text">Looks good</string>
+    <string name="retry_btn_text">Retry</string>
+    <string name="preview_confirmation_text">Don\'t ask again, directly add to pages.</string>
+    <string name="one_page_captured_text">%1$d Page captured</string>
+    <string name="n_pages_captured_text">%1$d Pages captured</string>
+    <string name="ebook_name_help_text">e\.g The Fred Factor pages 1 to 30 </string>
+    <string name="ebook_name_help_text_general">Choose an easy to remember name</string>
+    <string name="enter_ebook_name_hint">Enter the name of this e-book</string>
+    <string name="enter_ebook_name_error">E-book name cannot be empty!</string>
+
+    <!-- Ebook Screen -->
+    <string name="page_number_text">Page %1$d of %2$d</string>
+    <string name="page_number_text_for_image">Image %1$d of %2$d</string>
+    <string name="page_text_size">Slide to adjust font size</string>
+    <string name="max_pages_toast_text">Invalid page number. \nThere are %1$d pages in this file.</string>
+    <string name="resume_text">Resume where you left off?</string>
+    <string name="resume_text_affirmative">Yep</string>
+    <string name="resume_text_start_over">Start over</string>
+    <string name="help_text_tap_for_meaning">Tap on a word to see what it means</string>
+    <string name="help_text_got_it_text">Got it</string>
+    <string name="help_text_donot_show_again_text">Don\'t show again</string>
+    <string name="ebook_name_default_text">Extracted Text</string>
+
+    <!-- Documents Screen -->
+    <string name="docs_screen_header_text">Your PDF files</string>
+    <string name="docs_screen_error_text">We are unable to locate any pdf files on your device. \nTo view your pdf in ReadBud, tap on the file in File explorer and open with ReadBud.</string>
+
+    <!-- EBookList Screen -->
+    <string name="ebook_list_header_text">Your e-Books</string>
+
+    <!-- Dictionary screen -->
+    <string name="dictionary_header_text">Dictionary</string>
+    <string name="dictionary_query_hint">Type in your word…</string>
+    <string name="get_started_text">Get started</string>
+    <string name="dictionary_error_message">We couldn\'t find what you are looking for :(</string>
+    <string name="no_ebooks_message">You don\'t have any eBooks yet. \nGet started by opening your PDF files as Read Bud eBooks.</string>
+    <string name="no_pdfs_message">There are no PDF files on this device.</string>
+    <string name="delete_text">Delete</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="got_it_text">Got it</string>
+    <string name="google_it_text">Google it</string>
+    <string name="text_recognition_failed_toast_message">Unable to extract text. Please try again later.</string>
+    <string name="word_not_found_text">We couldn\'t find what you\'re looking for. \nTap on \"Google it\" to search the internet.</string>
+
+    <string name="banner_ad_id">ca-app-pub-8970396160161366/9137545925</string>
+    <string name="test_interstitial_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_id">ca-app-pub-8970396160161366/2590101832</string>
+    <string name="admob_app_id">ca-app-pub-8970396160161366~5090489705</string>
+    <string-array name="texture_names">
+        <item>No Texture</item>
+        <item>White</item>
+        <item>Vintage</item>
+        <item>Ancient</item>
+        <item>Warm</item>
+        <item>Cold</item>
+    </string-array>
+</resources>

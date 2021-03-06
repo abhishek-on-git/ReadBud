@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EbookActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_container_ebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ebook_name"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/ebook_name_default_text"
+            android:textColor="@color/app_black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:singleLine="true" />
+        <Spinner
+            android:id="@+id/texture_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/close_button_ebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@drawable/close_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/page_number_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_container_ebook"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/app_help_text_color"
+        android:fontFamily="@font/lato" />
+
+    <RelativeLayout
+        android:id="@+id/go_to_page_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_container_ebook"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/go_to_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to page"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/app_help_text_color"/>
+        <EditText
+            android:id="@+id/go_to_edit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30dp"
+            android:maxLength="5"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/go_to_text_view"
+            android:textSize="12dp"
+            android:padding="5dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/app_help_text_color"
+            android:inputType="number"
+            android:gravity="center_horizontal"
+            android:imeOptions="actionGo"/>
+
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ebook_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer_container"
+        android:layout_below="@id/page_number_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/footer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/next_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/next_button" />
+
+        <ImageView
+            android:id="@+id/previous_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/next_button"
+            android:src="@drawable/previous_button" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/previous_button">
+
+            <TextView
+                android:id="@+id/text_size_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:gravity="center_horizontal"
+                android:text="@string/page_text_size"
+                android:textColor="@color/app_help_text_color"
+                android:textSize="@dimen/page_content_font_size" />
+
+            <SeekBar
+                android:id="@+id/font_size_controller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_size_view"
+                android:progressTint="@color/app_black"
+                android:thumbTint="@color/app_black" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/word_meaning_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="25dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="@drawable/word_meaning_view_background">
+        <RelativeLayout
+            android:id="@+id/header_word_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp">
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="@color/app_black"/>
+
+            <ImageView
+                android:id="@+id/close_button_word_meaning"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/close_icon" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/error_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/app_red"
+            android:layout_margin="10dp"
+            android:textSize="14dp"
+            android:text="@string/word_not_found_text"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/definitions_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_above="@id/detail_footer_container"
+            android:layout_below="@id/header_word_meaning"/>
+        <LinearLayout
+            android:id="@+id/detail_footer_container"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/google_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/app_black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:text="@string/google_it_text"/>
+            <TextView
+                android:id="@+id/ok_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/app_black"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:text="@string/got_it_text"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/resume_reading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:background="@drawable/ebook_form_background_gradient">
+        <TextView
+            android:id="@+id/resume_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/resume_affirmative_button"
+            android:textColor="@color/app_black"
+            android:layout_marginBottom="30dp"
+            android:text="@string/resume_text"
+            android:textSize="14dp"
+            android:fontFamily="@font/lato"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/resume_affirmative_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/resume_start_over_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textSize="12dp"
+            android:text="@string/resume_text_affirmative"
+            android:textColor="@color/app_black"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/resume_start_over_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/resume_text_start_over"
+            android:textSize="12dp"
+            android:textColor="@color/app_black"
+            android:background="@drawable/button_background"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/help_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:background="@drawable/ebook_form_background_gradient">
+        <TextView
+            android:id="@+id/help_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/got_it_button"
+            android:textColor="@color/app_black"
+            android:layout_marginBottom="30dp"
+            android:text="@string/help_text_tap_for_meaning"
+            android:textSize="14dp"
+            android:fontFamily="@font/lato"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/got_it_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/donot_show_again_checkbox"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/help_text_got_it_text"
+            android:textSize="12dp"
+            android:textColor="@color/app_black"
+            android:background="@drawable/button_background"/>
+
+        <CheckBox
+            android:id="@+id/donot_show_again_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:theme="@style/app_check_box"
+            android:text="@string/help_text_donot_show_again_text"/>
+    </RelativeLayout>
+
+</RelativeLayout>

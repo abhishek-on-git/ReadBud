@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "389992430460",
+    "firebase_url": "https://read-bud.firebaseio.com",
+    "project_id": "read-bud",
+    "storage_bucket": "read-bud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389992430460:android:12b53cf34a157ee2bb82f9",
+        "android_client_info": {
+          "package_name": "com.wcp.readassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389992430460-k59dlnjp4tfrf216v58jebmvaail01t6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wcp.readassist",
+            "certificate_hash": "24fff22b7a9edcb0a4a48a1d3bff4cb877d832f8"
+          }
+        },
+        {
+          "client_id": "389992430460-0rfjdjca9ck8nkp48q3t45lmojfnu5u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYLdZxkBLSILsyV2oQ2JWXNX-kl1DO7UY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389992430460-0rfjdjca9ck8nkp48q3t45lmojfnu5u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

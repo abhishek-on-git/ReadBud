@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="app_white">#fafafa</color>
+    <color name="app_black">#252525</color>
+    <color name="app_grey">#B3252525</color>
+    <color name="black">#000000</color>
+    <color name="app_red">#ff0000</color>
+    <color name="button_background_color">#19252525</color>
+    <color name="dictionary_background_color">#80252525</color>
+    <color name="preview_button_background_color">#33fafafa</color>
+    <color name="app_dark_grey">@android:color/darker_gray</color>
+    <color name="app_help_text_color">#99000000</color>
+    <color name="gradient_terminal_color">#80252525</color>
+    <color name="ebook_page_default_color">#fafad2</color>
+    <color name="word_meaning_view_background_color">#f2ffffff</color>
+    <color name="main_screen_background_overlay">#4D252525</color>
+    <color name="capture_card_background">#80fafafa</color>
+    <color name="permission_error_background">#f2252525</color>
+</resources>
